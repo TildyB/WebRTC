@@ -22,7 +22,7 @@ function WebRTC() {
     const [videoInputs, setVideoInputs] = useState<videoInputs[]>([])
     const [didIOffer, setDidIOffer] = useState<boolean>(false)
     const didIOfferRef = useRef(didIOffer);
-    console.log("test")
+
     const  [readyToCall, setReadyToCall] = useState<boolean>(false)
     const [offers, setOffers] = useState<any[]>([])
     const peerConnection = useRef<RTCPeerConnection | null>(null)
