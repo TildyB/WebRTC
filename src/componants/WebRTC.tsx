@@ -12,10 +12,6 @@ function WebRTC() {
     }
 
     const { socket, userName } = useContext(SocketContext);
-    const constraints = {
-        video: true,
-        audio: false
-    }
     const localVideo = useRef<HTMLVideoElement>(null)
     const remoteVideo = useRef<HTMLVideoElement>(null)
     const [localMediaStreams, setLocalMediaStreams] = useState<MediaStream | null>(null)
